@@ -18,7 +18,7 @@
 > Run it on an isolated VM, in a disposable Docker host, or behind a
 > firewall that blocks all outbound traffic from the containers.
 
-BadBugny is a security team's playground for evaluating SCA, SAST, DAST,
+BadBugny is a whitetie playground for evaluating SCA, SAST, DAST,
 IAST and secret-scanning tooling. It is small enough to read end-to-end
 (≈1k LOC across two services) yet covers the most common web vulnerability
 classes plus several "AI-detectable, traditional-tool-blind" patterns.
