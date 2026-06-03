@@ -1,0 +1,31 @@
+{
+  "name": "badbugny-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Intentionally vulnerable React frontend for BadBugny",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 3000",
+    "start": "serve -s dist -l 3000"
+  },
+  "dependencies": {
+    "axios": "0.21.0",
+    "handlebars": "4.0.5",
+    "jquery": "3.4.0",
+    "lodash": "4.17.4",
+    "marked": "0.3.6",
+    "minimist": "1.2.0",
+    "moment": "2.18.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "serialize-javascript": "1.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
+    "serve": "^14.2.1",
+    "vite": "^4.5.0"
+  }
+}

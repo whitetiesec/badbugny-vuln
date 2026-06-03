@@ -1,0 +1,8 @@
+# Never copy host build artifacts into the image — the Docker build runs its
+# own `npm install` and `npm run build`. Copying a (possibly broken) local
+# node_modules over the freshly installed one is what caused vite to fail.
+node_modules
+dist
+npm-debug.log*
+.git
+.DS_Store

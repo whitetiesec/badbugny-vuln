@@ -1,0 +1,47 @@
+services:
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: badbugny
+      POSTGRES_PASSWORD: badbugny_pwd_super_secret
+      POSTGRES_DB: badbugny
+    ports:
+      - "5432:5432"
+    volumes:
+      - badbugny_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U badbugny -d badbugny"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  backend:
+    build: ./backend
+    environment:
+      DB_HOST: db
+      DB_PORT: "5432"
+      DB_USER: badbugny
+      DB_PASSWORD: badbugny_pwd_super_secret
+      DB_NAME: badbugny
+      # Intentionally leaky env vars for the /api/debug endpoint.
+      AWS_ACCESS_KEY_ID: AKIAIOSFODNN7EXAMPLE
+      AWS_SECRET_ACCESS_KEY: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+      INTERNAL_ADMIN_BACKDOOR: let_me_in_pls_2026
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
+    volumes:
+      - badbugny_uploads:/app/uploads
+
+  frontend:
+    build: ./frontend
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"
+
+volumes:
+  badbugny_pgdata:
+  badbugny_uploads:

@@ -1,0 +1,8 @@
+# Keep host-built artifacts out of the build context; the image builds from
+# source with `go build`.
+badbugny
+smallbug
+server
+*.test
+.git
+.DS_Store

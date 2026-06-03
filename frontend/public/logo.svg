@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" role="img" aria-label="BadBugny: a bunny wearing sunglasses riding a Harley-style motorbike">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#161b22"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6edf3"/>
+      <stop offset="1" stop-color="#8b949e"/>
+    </linearGradient>
+    <linearGradient id="tank" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff7b3d"/>
+      <stop offset="1" stop-color="#d2451e"/>
+    </linearGradient>
+    <radialGradient id="exhaust" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd27a"/>
+      <stop offset="1" stop-color="#ff7b3d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- backdrop -->
+  <rect x="0" y="0" width="320" height="200" rx="18" fill="url(#bg)"/>
+
+  <!-- road -->
+  <line x1="14" y1="168" x2="306" y2="168" stroke="#30363d" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- speed lines -->
+  <g stroke="#ff7b3d" stroke-width="4" stroke-linecap="round" opacity="0.8">
+    <line x1="6"  y1="92"  x2="58"  y2="92"/>
+    <line x1="2"  y1="118" x2="46"  y2="118"/>
+    <line x1="10" y1="142" x2="40"  y2="142"/>
+  </g>
+
+  <!-- exhaust puff -->
+  <circle cx="58" cy="150" r="16" fill="url(#exhaust)"/>
+
+  <!-- ===================== MOTORBIKE ===================== -->
+  <!-- rear wheel -->
+  <g>
+    <circle cx="96" cy="150" r="30" fill="#0d1117" stroke="#1f2937" stroke-width="2"/>
+    <circle cx="96" cy="150" r="30" fill="none" stroke="#161b22" stroke-width="10"/>
+    <circle cx="96" cy="150" r="11" fill="none" stroke="url(#chrome)" stroke-width="4"/>
+    <g stroke="url(#chrome)" stroke-width="2.5">
+      <line x1="96" y1="139" x2="96" y2="161"/>
+      <line x1="85" y1="150" x2="107" y2="150"/>
+      <line x1="88" y1="142" x2="104" y2="158"/>
+      <line x1="104" y1="142" x2="88" y2="158"/>
+    </g>
+  </g>
+  <!-- front wheel -->
+  <g>
+    <circle cx="236" cy="150" r="30" fill="#0d1117" stroke="#1f2937" stroke-width="2"/>
+    <circle cx="236" cy="150" r="30" fill="none" stroke="#161b22" stroke-width="10"/>
+    <circle cx="236" cy="150" r="11" fill="none" stroke="url(#chrome)" stroke-width="4"/>
+    <g stroke="url(#chrome)" stroke-width="2.5">
+      <line x1="236" y1="139" x2="236" y2="161"/>
+      <line x1="225" y1="150" x2="247" y2="150"/>
+      <line x1="228" y1="142" x2="244" y2="158"/>
+      <line x1="244" y1="142" x2="228" y2="158"/>
+    </g>
+  </g>
+
+  <!-- exhaust pipes -->
+  <path d="M96 150 q-18 6 -40 6" fill="none" stroke="url(#chrome)" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- frame / engine -->
+  <path d="M96 150 L150 132 L196 132 L236 150" fill="none" stroke="#3d444d" stroke-width="6" stroke-linecap="round"/>
+  <rect x="138" y="128" width="34" height="26" rx="4" fill="#3d444d"/>
+  <rect x="142" y="132" width="26" height="6" rx="2" fill="url(#chrome)"/>
+
+  <!-- fuel tank -->
+  <path d="M150 128 q34 -16 60 -2 q4 12 -8 16 l-44 0 q-10 -6 -8 -14 z" fill="url(#tank)" stroke="#a83214" stroke-width="2"/>
+  <ellipse cx="186" cy="124" rx="9" ry="4" fill="#ffd27a" opacity="0.7"/>
+
+  <!-- seat -->
+  <path d="M150 126 q-12 -2 -22 4 q-2 6 6 7 l22 -3 z" fill="#21262d" stroke="#30363d" stroke-width="2"/>
+
+  <!-- handlebars -->
+  <path d="M214 122 L236 96" stroke="#3d444d" stroke-width="6" stroke-linecap="round"/>
+  <path d="M236 96 q14 -2 22 6" fill="none" stroke="url(#chrome)" stroke-width="6" stroke-linecap="round"/>
+  <!-- headlight -->
+  <circle cx="244" cy="118" r="9" fill="#ffd27a" stroke="url(#chrome)" stroke-width="3"/>
+
+  <!-- ===================== BUNNY ===================== -->
+  <g>
+    <!-- ears (one streamed back by the wind) -->
+    <path d="M150 70 q-10 -40 -2 -54 q12 -2 14 16 q2 22 -4 40 z" fill="#e6edf3" stroke="#c9d1d9" stroke-width="2"/>
+    <path d="M150 70 q-10 -38 -2 -50 q6 0 7 12 q1 20 -3 38 z" fill="#ff9bb0"/>
+    <path d="M158 64 q22 -28 44 -28 q6 8 -6 18 q-22 16 -34 18 z" fill="#e6edf3" stroke="#c9d1d9" stroke-width="2"/>
+    <path d="M160 62 q20 -24 38 -25 q3 6 -5 12 q-18 13 -30 16 z" fill="#ff9bb0"/>
+
+    <!-- head -->
+    <circle cx="150" cy="92" r="30" fill="#e6edf3" stroke="#c9d1d9" stroke-width="2"/>
+
+    <!-- cheeks/muzzle -->
+    <ellipse cx="150" cy="104" rx="16" ry="12" fill="#f3f6f9"/>
+
+    <!-- sunglasses -->
+    <g>
+      <rect x="126" y="82" width="48" height="6" rx="3" fill="#0d1117"/>
+      <rect x="124" y="86" width="22" height="15" rx="7" fill="#0d1117" stroke="#3d444d" stroke-width="2"/>
+      <rect x="154" y="86" width="22" height="15" rx="7" fill="#0d1117" stroke="#3d444d" stroke-width="2"/>
+      <line x1="146" y1="90" x2="154" y2="90" stroke="#0d1117" stroke-width="4"/>
+      <!-- shades glare -->
+      <line x1="128" y1="98" x2="140" y2="89" stroke="#58a6ff" stroke-width="2" opacity="0.8"/>
+      <line x1="158" y1="98" x2="170" y2="89" stroke="#58a6ff" stroke-width="2" opacity="0.8"/>
+    </g>
+
+    <!-- nose + whiskers -->
+    <path d="M147 106 l6 0 l-3 4 z" fill="#ff6b81"/>
+    <g stroke="#c9d1d9" stroke-width="1.5" stroke-linecap="round">
+      <line x1="134" y1="108" x2="118" y2="106"/>
+      <line x1="134" y1="112" x2="119" y2="114"/>
+      <line x1="166" y1="108" x2="182" y2="106"/>
+      <line x1="166" y1="112" x2="181" y2="114"/>
+    </g>
+    <!-- buck teeth -->
+    <rect x="146" y="111" width="8" height="7" rx="1.5" fill="#fff"/>
+    <line x1="150" y1="111" x2="150" y2="118" stroke="#c9d1d9" stroke-width="1"/>
+
+    <!-- paw on the handlebar -->
+    <ellipse cx="206" cy="118" rx="9" ry="7" fill="#e6edf3" stroke="#c9d1d9" stroke-width="2"/>
+  </g>
+</svg>
